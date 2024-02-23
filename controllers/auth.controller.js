@@ -64,7 +64,7 @@ export const loginController = async (req, res) => {
     if (!isMatch) {
       return res
         .status(400)
-        .json({ message: "Password or userName does not match" });
+        .json({ message: "Password or username does not match" });
     }
     // generating JWT
     generateJWToken(user._id, res);

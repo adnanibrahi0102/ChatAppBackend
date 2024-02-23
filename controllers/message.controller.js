@@ -41,7 +41,7 @@ export const sendMessageController = async (req, res) => {
     });
   }
 };
-
+//getting all messages controller
 export const getMessagesController = async (req, res) => {
   try {
     const { id: userToChartId } = req.params;
