@@ -5,9 +5,10 @@ import authRoute from './routes/auth.routes.js'
 import connectDB from "./config/db.js";
 import messagesRoute from './routes/message.route.js'
 import usersRoute from './routes/users.routes.js'
-
+import cors from 'cors'
 const app=express();
 //middlewares
+app.use(cors());
 dotenv.config()
 const PORT=process.env.PORT ||5000;
 app.use(express.json())

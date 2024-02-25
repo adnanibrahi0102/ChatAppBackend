@@ -72,7 +72,7 @@ export const loginController = async (req, res) => {
       message: "Login Successfull",
       success: true,
       user,
-    });
+    })
   } catch (error) {
     console.log(error);
     res.status(500).send({
